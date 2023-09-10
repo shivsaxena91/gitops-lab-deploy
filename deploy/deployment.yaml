@@ -15,7 +15,7 @@ spec:
         app: nginxhello
     spec:
       containers:
-      - image: docker.io/nbrown/nginxhello:1.20.2
+      - image: docker.io/nbrown/nginxhello:1.20.2 # {"$imagepolicy": "default:nginxhello"}
         name: nginxhello
         ports:
         - containerPort: 80
